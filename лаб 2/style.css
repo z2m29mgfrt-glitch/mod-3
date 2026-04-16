@@ -1,5 +1,5 @@
 body {
-  font-family: LagunaC;
+  font-family: Klukva;
   padding: 20px;
   background-color: #fff;
   color: #000;
@@ -9,7 +9,7 @@ body {
 .profile-photo {
   width: 200px;
   height: 200px;
-  object-fit: cover; /* обрезает изображение, сохраняя пропорции */
+  object-fit: cover; 
   border-radius: 8px;
 }
 
@@ -43,7 +43,6 @@ li {
   gap: 8px;
 }
 
-/* Тёмная тема */
 .dark-theme {
   background-color: #222;
   color: #eee;
@@ -54,7 +53,6 @@ li {
   border: 1px solid white;
 }
 
-/* Подсветка ошибки в поле ввода */
 .error {
   border: 2px solid red;
   background-color: #ffe6e6;

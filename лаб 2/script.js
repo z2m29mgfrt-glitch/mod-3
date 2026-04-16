@@ -1,4 +1,3 @@
-// Находим все нужные элементы на странице
 const body = document.querySelector('#page-body');
 const themeBtn = document.querySelector('#theme-btn');
 
@@ -9,7 +8,6 @@ const noteInput = document.querySelector('#note-input');
 const addNoteBtn = document.querySelector('#add-note-btn');
 const notesList = document.querySelector('#notes-list');
 
-// Задание 1: Переключение тёмной темы
 themeBtn.addEventListener('click', function() {
   body.classList.toggle('dark-theme');
 
@@ -20,7 +18,6 @@ themeBtn.addEventListener('click', function() {
   }
 });
 
-// Задание 2: Смена изображения (между двумя фото из папки img/)
 const photoUrls = [
   'img/img1.jpg',
   'img/img2.jpg'
@@ -36,7 +33,6 @@ changeImgBtn.addEventListener('click', function() {
   profileImg.setAttribute('alt', `Фото ${currentPhotoIndex + 1}`);
 });
 
-// Задание 3: Добавление заметки в список
 addNoteBtn.addEventListener('click', function() {
   const text = noteInput.value.trim();
 
@@ -45,11 +41,9 @@ addNoteBtn.addEventListener('click', function() {
     return;
   }
 
-  // Создаём элемент <li>
   const newItem = document.createElement('li');
   newItem.textContent = text;
 
-  // Добавляем кнопку «Удалить» для каждой заметки
   const deleteBtn = document.createElement('button');
   deleteBtn.textContent = '✕ Удалить';
 
@@ -60,12 +54,10 @@ addNoteBtn.addEventListener('click', function() {
   newItem.appendChild(deleteBtn);
   notesList.appendChild(newItem);
 
-  // Очищаем поле ввода и убираем класс ошибки
   noteInput.value = '';
   noteInput.classList.remove('error');
 });
 
-// Задание 4: Валидация поля ввода
 noteInput.addEventListener('input', function() {
   if (noteInput.value.length < 3) {
     noteInput.classList.add('error');
