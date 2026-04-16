@@ -1,6 +1,8 @@
 $('#loadBtn').on('click', function() {
   const result = $('#result');
-  result.text('Загружаем данные...').addClass('loading').removeClass('error');
+  result.text('Загружаем данные...')
+         .addClass('loading')
+         .removeClass('error success');
 
   fetch('https://jsonplaceholder.typicode.com/users/1')
     .then(function(response) {
@@ -11,10 +13,13 @@ $('#loadBtn').on('click', function() {
     })
     .then(function(data) {
       result.text('Имя: ' + data.name + ' | Email: ' + data.email)
-           .removeClass('loading');
+           .removeClass('loading')
+           .addClass('success');
     })
     .catch(function(error) {
       console.error('Ошибка:', error);
-      result.text('Ошибка: ' + error.message).addClass('error').removeClass('loading');
+      result.text('Ошибка: ' + error.message)
+           .addClass('error')
+           .removeClass('loading');
     });
 });
