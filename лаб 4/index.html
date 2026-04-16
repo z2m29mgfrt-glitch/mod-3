@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой список контактов</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Мой список контактов</h1>
+
+    <!-- Форма добавления контакта -->
+    <div class="form-group">
+      <input type="text" id="name-input" placeholder="Введите имя...">
+      <input type="tel" id="phone-input" placeholder="Введите телефон...">
+      <button id="add-contact-btn">Добавить контакт</button>
+    </div>
+
+    <!-- Блок поиска -->
+    <div class="search-section">
+      <input type="text" id="search-input" placeholder="Поиск по имени или телефону...">
+      <button id="search-btn">Найти</button>
+      <button id="show-all-btn">Показать все</button>
+    </div>
+
+    <!-- Счётчик контактов -->
+    <div id="contact-counter">Всего контактов: 0</div>
+
+    <!-- Кнопка очистки всего списка -->
+    <button id="clear-all-btn">Очистить всё</button>
+
+    <!-- Список контактов -->
+    <ul id="contacts-list"></ul>
+  </div>
+</body>
+</html>
