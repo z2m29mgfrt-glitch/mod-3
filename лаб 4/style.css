@@ -6,7 +6,8 @@
 
 body {
   font-family: Klukva;
-  background: linear-gradient(135deg, #667eea 0%, #764ba1 100%);
+  background: #f8f9fa;
+  color: #333;
   min-height: 100vh;
   padding: 20px;
 }
@@ -16,29 +17,29 @@ body {
   margin: 0 auto;
   background: white;
   padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 h1 {
   text-align: center;
-  color: #2d3748;
-  margin-bottom: 30px;
-  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 26px;
   font-weight: 600;
 }
 
 .form-group {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   margin-bottom: 20px;
   flex-wrap: wrap;
 }
 
 .form-group input {
   flex: 1;
-  padding: 14px;
-  border: 2px solid #e2e8f0;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 14px;
   transition: border-color 0.3s;
@@ -46,11 +47,11 @@ h1 {
 
 .form-group input:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #4a90e2;
 }
 
 button {
-  padding: 12px 24px;
+  padding: 12px 20px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -60,27 +61,27 @@ button {
 }
 
 #add-contact-btn {
-  background: #48bb78;
+  background: #4a90e2;
   color: white;
 }
 
 #add-contact-btn:hover {
-  background: #38a169;
+  background: #3a7bc8;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(72, 187, 120, 0.3);
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
 }
 
 .search-section {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   margin-bottom: 20px;
   flex-wrap: wrap;
 }
 
 #search-input {
   flex: 1;
-  padding: 14px;
-  border: 2px solid #e2e8f0;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 14px;
   transition: border-color 0.3s;
@@ -88,46 +89,45 @@ button {
 
 #search-input:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #4a90e2;
 }
 
 #search-btn,
 #show-all-btn {
-  background: #667eea;
+  background: #6c757d;
   color: white;
 }
 
 #search-btn:hover,
 #show-all-btn:hover {
-  background: #5a67d3;
+  background: #5a6268;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 12px rgba(108, 117, 125, 0.2);
 }
 
 #clear-all-btn {
-  background: #ed8936;
+  background: #dc3545;
   color: white;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-weight: 600;
 }
 
 #clear-all-btn:hover {
-  background: #dd6b20;
+  background: #c82333;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(237, 137, 54, 0.3);
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.2);
 }
 
 #contact-counter {
   text-align: center;
-  font-size: 16px;
-  font-weight: 600;
-  color: #4a5568;
+  font-size: 15px;
+  font-weight: 500;
+  color: #495057;
   margin-bottom: 20px;
   padding: 12px;
-  background: #f7fafc;
+  background: #e9ecef;
   border-radius: 8px;
-  border-left: 4px solid #667eea;
 }
 
 #contacts-list {
@@ -139,12 +139,12 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 16px;
+  padding: 16px 20px;
   margin-bottom: 12px;
-  background: #f8fafc;
+  background: #fff;
+  border: 1px solid #e9ecef;
   border-radius: 8px;
-  border-left: 4px solid #48bb78;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: all 0.3s ease;
   animation: slideIn 0.3s ease-out;
 }
 
@@ -161,7 +161,8 @@ button {
 
 .contact-item:hover {
   transform: translateX(4px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border-color: #ced4da;
 }
 
 .contact-info {
@@ -170,12 +171,12 @@ button {
 
 .contact-name {
   font-weight: 600;
-  color: #2d3748;
+  color: #212529;
   font-size: 15px;
 }
 
 .contact-phone {
-  color: #718096;
+  color: #6c757d;
   font-size: 13px;
   margin-top: 4px;
 }
@@ -186,15 +187,15 @@ button {
 }
 
 .delete-btn {
-  background: #e53e3e;
+  background: #ff6b6b;
   color: white;
-  padding: 6px 12px;
-  font-size: 12px;
+  padding: 8px 14px;
+  font-size: 13px;
   border-radius: 6px;
 }
 
 .delete-btn:hover {
-  background: #c53030;
+  background: #ee5253;
   transform: scale(1.05);
 }
 
@@ -203,7 +204,7 @@ button {
 }
 
 .error-message {
-  color: #e53e3e;
+  color: #e74c3c;
   font-size: 12px;
   margin-top: 8px;
   text-align: center;
