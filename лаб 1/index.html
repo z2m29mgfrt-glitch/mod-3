@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<title>Моя визитка</title>
-<script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <title>Моя визитка</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1 id="main-title">Привет, я Екатерина!</h1>
-<p id="description-text">Я изучаю веб-разработку. Это моя первая лабораторная!</p>
-<button id="change-title-btn">Поменять заголовок</button>
-<button id="change-color-btn">Сделать текст синим</button>
-<button id="toggle-text-btn">Спрятать текст</button>
+  <div class="card">
+    <h1 id="main-title">Привет, я Екатерина!</h1>
+    <p id="description-text">Я изучаю веб‑разработку. Это моя первая лабораторная в 3 модуле!</p>
+
+    <div class="button-group">
+      <button id="change-title-btn" class="btn">Поменять заголовок</button>
+      <button id="change-color-btn" class="btn">Сделать текст синим</button>
+      <button id="toggle-text-btn" class="btn">Спрятать текст</button>
+    </div>
+
+    <div class="image-container">
+      <img id="my-image" src="img/img1.jpg" alt="Моя картинка">
+    </div>
+    <button id="change-img-btn" class="btn btn-secondary">Сменить картинку</button>
+  </div>
+
+  <script src="script.js" defer></script>
 </body>
 </html>

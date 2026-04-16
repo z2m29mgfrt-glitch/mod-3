@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Klukva;
+  background: linear-gradient(135deg, #667eea 0%, #764ba1 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 24px;
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  color: #2d3748;
+  margin-bottom: 16px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#description-text {
+  color: #718096;
+  margin-bottom: 32px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.btn {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+#change-title-btn {
+  background: linear-gradient(90deg, #667eea, #764ba1);
+  color: white;
+}
+
+#change-color-btn {
+  background: linear-gradient(90deg, #4fd1c5, #48bb78);
+  color: white;
+}
+
+#toggle-text-btn {
+  background: linear-gradient(90deg, #f687b0, #ed64a6);
+  color: white;
+}
+
+#change-img-btn {
+  width: 100%;
+  background: #e2e8f0;
+  color: #4a5568;
+}
+
+.image-container {
+  margin: 24px 0;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 16px;
+  overflow: hidden;
+}
